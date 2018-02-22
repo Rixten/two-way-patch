@@ -1,1 +1,19 @@
 
+<<<<<<< HEAD
+=======
+body {
+  background-color: #aaa;
+  font-family: Arial;
+  font-size: 13px;
+  line-height: 23px;
+  text-align: justify;
+  margin: 0;
+}
+#circle {
+  width: 500px;
+  height: 500px;
+  border-radius: 50px;
+  background-color: #fff;
+  text-align: center;
+}
+>>>>>>> origin/alinas
