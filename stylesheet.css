@@ -10,9 +10,10 @@ body {
   margin: 0;
 }
 #circle {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   margin: 0 auto;
+  margin-top: 200px;
   border-radius: 150px;
   background-color: #fff;
   text-align: center;
