@@ -41,10 +41,13 @@ li.cent {
   background-color: #fefefe;
   box-sizing: border-box;
   border-radius: 50%;
-  padding: 120px;
+  padding-top: 120px;
   margin-left: 0px;
   margin-right: 0px;
   width: 19%;
   height: 270px;
   border: 0px solid #fff;
+  text-transform: uppercase;
+  font-size: 28px;
+  letter-spacing: 1px;
 }
