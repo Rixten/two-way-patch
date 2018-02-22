@@ -1,7 +1,7 @@
 /* this is a css file */
 
 body {
-  background-color: #aaa;
+  background-color: #212121;
   font-family: Arial;
   font-size: 13px;
   line-height: 23px;
@@ -9,11 +9,45 @@ body {
   color: #000;
   margin: 0;
 }
-#circle {
-  width: 500px;
-  height: 500px;
-  border-radius: 50px;
-  background-color: #fff;
+#wrap {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-top: 16%;
+  padding: 0px;
+}
+#wrap ul {
+  width: 100%;
+  box-sizing: border-box;
   text-align: center;
-  color: #000;
+  color: #212121;
+  border: 0px solid #aaa;
+  padding: 0px;
+}
+li.reg {
+  display: inline-block;
+  background: transparent;
+  box-sizing: border-box;
+  padding-top: 120px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 13%;
+  height: 270px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+li.cent {
+  display: inline-block;
+  background-color: #fefefe;
+  box-sizing: border-box;
+  border-radius: 50%;
+  padding-top: 120px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 19%;
+  height: 270px;
+  border: 0px solid #fff;
+  text-transform: uppercase;
+  font-size: 28px;
+  letter-spacing: 1px;
 }
