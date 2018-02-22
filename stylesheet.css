@@ -9,17 +9,29 @@ body {
   color: #000;
   margin: 0;
 }
-.navi {
+#wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+#wrap ul {
   width: 100%;
   margin-top: 15%;
   text-align: center;
-  color: #000;
+  color: #fff;
+  border: 1px solid #aaa;
+  padding: 0px;
 }
-.reg {
-  display: inline;
+li.reg {
+  display: inline-block;
+  margin-left: -2px;
+  margin-right: -2px;
+  width: 14%;
   border: 1px solid #fff;
 }
-.cent {
-  display: inline;
+li.cent {
+  display: inline-block;
+  margin-left: -2px;
+  margin-right: -2px;
+  width: 14%;
   border: 1px solid #fff;
 }
