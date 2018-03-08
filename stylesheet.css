@@ -55,10 +55,10 @@ li.cent {
 }
 
 .pulse2 {
-	-webkit-animation: pulse2 1s linear infinite;
-	-moz-animation: pulse2 1s linear infinite;
-	-ms-animation: pulse2 1s linear infinite;
-	animation: pulse2 1s linear infinite;
+	-webkit-animation: pulse2 3s linear infinite;
+	-moz-animation: pulse2 3s linear infinite;
+	-ms-animation: pulse2 3s linear infinite;
+	animation: pulse2 3s linear infinite;
 }
 
 @keyframes "pulse2" {
