@@ -1,6 +1,6 @@
 
 body {
-  background-image: url("/two-way-patch/Background.jpg");
+  background-image: url("Background.jpg");
   background-size: cover;
   font-family: Arial;
   font-size: 13px;
