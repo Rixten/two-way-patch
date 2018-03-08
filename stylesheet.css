@@ -28,14 +28,15 @@ li.reg {
   display: inline-block;
   background: transparent;
   box-sizing: border-box;
+  border-radius: 50%;
   cursor: default;
-  padding-top: 120px;
-  margin-left: 0px;
-  margin-right: 0px;
-  width: 13%;
-  height: 270px;
+  padding-top: 65px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 10%;
+  height: 150px;
   color: #000;
-  border: 0px solid #fff;
+  border: 1px solid #000;
 }
 li.cent {
   display: inline-block;
