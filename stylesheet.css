@@ -1,4 +1,6 @@
 
+<<<<<<< HEAD
+=======
 body {
   background-image: url("Background.jpg");
   background-size: cover;
@@ -34,7 +36,7 @@ li.reg {
   margin-left: 15px;
   margin-right: 15px;
   width: 11%;
-  height: 155px;
+  height: 150px;
   color: #000;
   border: 1px solid #000;
 }
@@ -134,3 +136,4 @@ li.cent {
  }
 
 }
+>>>>>>> origin/alinas
