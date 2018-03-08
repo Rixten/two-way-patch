@@ -1,8 +1,10 @@
 body {
-  background-image: url("Background.jpg");
+  background-image: url("bg.jpg");
  /*  background-size: cover; */
+  background-position: left top;
   background-attachment: fixed;
   background-repeat: repeat;
+  background-size: 800px;
   font-family: Arial;
   font-size: 13px;
   line-height: 23px;
