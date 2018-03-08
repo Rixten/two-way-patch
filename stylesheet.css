@@ -1,7 +1,7 @@
 /* this is a css file */
 
 body {
-  background-color: #000;
+  background-color: #fff;
   font-family: Arial;
   font-size: 13px;
   line-height: 23px;
@@ -20,7 +20,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   text-align: center;
-  color: #212121;
+  color: #fff;
   border: 0px solid #aaa;
   padding: 0px;
 }
@@ -34,12 +34,12 @@ li.reg {
   margin-right: 0px;
   width: 13%;
   height: 270px;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #000;
+  border: 0px solid #fff;
 }
 li.cent {
   display: inline-block;
-  background-color: #fefefe;
+  background-color: #000;
   box-sizing: border-box;
   cursor: default;
   border-radius: 50%;
