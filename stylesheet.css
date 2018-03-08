@@ -1,5 +1,5 @@
 body {
-  background-image: url("bg.jpg");
+  background-image: url("two-way-patch/bg.jpg");
  /*  background-size: cover; */
   background-position: left top;
   background-attachment: fixed;
