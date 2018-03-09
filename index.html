@@ -16,7 +16,12 @@
 <div id="wrap"> <!-- wrap div to enclose content -->
 
   <ul class="ul2"> <!-- center bubble -->
-  <li class="cent pulse">About</li>
+  <li class="cent pulse">
+
+    <div class="tex name">Two-way-patch</div>
+    <div class="tex about">About</div>
+
+  </li>
   </ul>
 
 <ul class="ul1"> <!-- emotion bubbles -->
@@ -39,7 +44,15 @@ Design by SaFire 2018 | Artworks &copy; <a href="" target="_blank">address</a>
 
 </body>
 
-<script>
-// javascript tag //
+<script> /* javascript starts here */
+
+$(".cent").mouseenter(function() { /* when mouse enters .cent */
+  $(".tex").slideToggle("500", "linear"); /* hide name */
+});
+
+$(".cent").mouseleave(function() { /* when mouse leaves .cent */
+  $(".tex").slideToggle("500", "linear"); /* hide "about" */
+});
+
 </script>
 </html>
