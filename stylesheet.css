@@ -15,7 +15,7 @@ body {
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
-  margin-top: 20%;
+  margin-top: 17%;
   padding: 0px;
 }
 ul.ul1 {   /* unorganised list general styles */
@@ -24,14 +24,15 @@ ul.ul1 {   /* unorganised list general styles */
   text-align: center;
   color: #fff;
   padding: 0px;
+  margin-top: -16vw;
 }
 li.reg {    /* styles for the emotion bubbles */
   display: inline-block;
   box-sizing: border-box;
   border-radius: 50%;
   cursor: pointer;
-  width: 11%;
-  height: 160px;
+  width: 11vw;
+  height: 11vw;
   color: transparent;
   overflow: hidden;
 }
@@ -57,37 +58,37 @@ li.reg.em1 {
   background-image: url("em1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-right: 10px;
+  margin-right: 1vw;
 }
 li.reg.em2 {
   background-image: url("em1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-right: 10px;
+  margin-right: 1vw;
 }
 li.reg.em3 {
   background-image: url("em1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-right: 150px;
+  margin-right: 10vw;
 }
 li.reg.em4 {
   background-image: url("em1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 150px;
+  margin-left: 10vw;
 }
 li.reg.em5 {
   background-image: url("em1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 10px;
+  margin-left: 1vw;
 }
 li.reg.em6 {
   background-image: url("em1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 10px;
+  margin-left: 1vw;
 }
 li.reg:hover {
   color: #fff;
@@ -96,7 +97,7 @@ li.reg:hover {
   font-size: 25px;
 }
 ul.ul2 {
-  margin-top: -225px;
+  margin-top: 0px;
   width: 100%;
   box-sizing: border-box;
   text-align: center;
@@ -109,15 +110,14 @@ li.cent {   /* styles for the center bubble */
   box-sizing: border-box;
   cursor: pointer;
   border-radius: 50%;
-  padding-top: 118px;
-  margin-left: 0px;
-  margin-right: 0px;
-  width: 19%;
-  height: 270px;
+  vertical-align: middle;
+  line-height: 19vw;
+  width: 19vw;
+  height: 19vw;
   border: 0px solid #fff;
   font-family: 'Megrim', cursive;
   text-transform: uppercase;
-  font-size: 48px;
+  font-size: 46px;
   letter-spacing: 1px;
   -webkit-transition-duration: 1s; /* Safari */
   transition-duration: 1s;
@@ -195,5 +195,101 @@ li.cent:hover {
    -ms-transform: scale(1);
    transform: scale(1);
  }
+
+}
+@media (max-width: 1000px) {  /* styles for smaller screens */
+  #wrap {  /* wrap div to enclose the elements */
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-top: 5%;
+    padding: 0px;
+  }
+  ul.ul1 {
+    margin-top: 0px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  ul.ul2 {
+    margin-top: 0px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #trick {
+    display: block;
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    color: transparent;
+    overflow: hidden;
+    font-family: 'Quantico', sans-serif;
+    font-size: 25px;
+    -webkit-transition-duration: 0.6s; /* Safari */
+    transition-duration: 0.6s;
+  }
+  #trick:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+  }
+li.reg {
+  display: block;
+  width: 25vw;
+  height: 25vw;
+  line-height: 25vw;
+  vertical-align: middle;
+}
+li.cent {
+  display: block;
+  width: 40vw;
+  height: 40vw;
+  margin: 0 auto;
+  line-height: 40vw;
+  vertical-align: middle;
+  margin-bottom: 15px;
+}
+li.reg.em1 {
+  background-image: url("em1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+li.reg.em2 {
+  background-image: url("em1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+li.reg.em3 {
+  background-image: url("em1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+li.reg.em4 {
+  background-image: url("em1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+li.reg.em5 {
+  background-image: url("em1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+li.reg.em6 {
+  background-image: url("em1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
 
 }
