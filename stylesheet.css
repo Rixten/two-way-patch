@@ -1,10 +1,9 @@
 body {
   background-image: url("bg.jpg");
- /*  background-size: cover; */
   background-position: left top;
   background-attachment: fixed;
   background-repeat: repeat;
-  background-size: 800px;
+  background-size: 950px;
   font-family: Arial;
   font-size: 13px;
   line-height: 23px;
@@ -12,14 +11,14 @@ body {
   color: #000;
   margin: 0;
 }
-#wrap {
+#wrap {  /* wrap div to enclose the elements */
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
   margin-top: 16%;
   padding: 0px;
 }
-#wrap ul {
+#wrap ul {   /* unorganised list general styles */
   width: 100%;
   box-sizing: border-box;
   text-align: center;
@@ -27,43 +26,89 @@ body {
   border: 0px solid #aaa;
   padding: 0px;
 }
-li.reg {
+li.reg {    /* styles for the emotion bubbles */
   display: inline-block;
-  background: transparent;
   box-sizing: border-box;
   border-radius: 50%;
-  cursor: default;
-  padding-top: 65px;
-  margin-left: 10px;
-  margin-right: 10px;
+  cursor: pointer;
+  padding-top: 72px;
   width: 11%;
-  height: 155px;
-  color: #000;
-  border: 1px solid #000;
+  height: 160px;
+  color: transparent;
+  overflow: hidden;
+  font-family: 'Quantico', sans-serif;
+  font-size: 22px;
 }
-li.cent {
+li.reg.em1 {
+  background-image: url("em1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 10px;
+}
+li.reg.em2 {
+  background-image: url("em1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 10px;
+}
+li.reg.em3 {
+  background-image: url("em1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 10px;
+}
+li.reg.em4 {
+  background-image: url("em1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 10px;
+}
+li.reg.em5 {
+  background-image: url("em1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 10px;
+}
+li.reg.em6 {
+  background-image: url("em1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 10px;
+}
+li.reg:hover {
+  color: #000;
+  background: rgba(0,0,0,0.9);
+  font-family: 'Quantico', sans-serif;
+  font-size: 22px;
+}
+li.cent {   /* styles for the center bubble */
   display: inline-block;
-  background-color: #000;
+  background-color: rgba(0,0,0,0.8);
   box-sizing: border-box;
-  cursor: default;
+  cursor: pointer;
   border-radius: 50%;
-  padding-top: 120px;
+  padding-top: 125px;
   margin-left: 0px;
   margin-right: 0px;
   width: 19%;
   height: 270px;
   border: 0px solid #fff;
+  font-family: 'Megrim', cursive;
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 46px;
   letter-spacing: 1px;
+  -webkit-transition-duration: 1s; /* Safari */
+  transition-duration: 1s;
 }
-.pulse {
+li.cent:hover {
+  background-color: #000;
+}
+.pulse {        /* pulse effect code */
 	-webkit-animation: pulse 4s linear infinite;
 	-moz-animation: pulse 4s linear infinite;
 	-ms-animation: pulse 4s linear infinite;
 	animation: pulse 4s linear infinite;
 }
-
 @keyframes "pulse" {
  0% {
     -webkit-transform: scale(1);
@@ -86,9 +131,7 @@ li.cent {
    	-ms-transform: scale(1);
    	transform: scale(1);
  }
-
 }
-
 @-moz-keyframes pulse {
  0% {
    -moz-transform: scale(1);
@@ -102,9 +145,7 @@ li.cent {
    -moz-transform: scale(1);
    transform: scale(1);
  }
-
 }
-
 @-webkit-keyframes "pulse" {
  0% {
    -webkit-transform: scale(1);
@@ -118,9 +159,7 @@ li.cent {
    -webkit-transform: scale(1);
    transform: scale(1);
  }
-
 }
-
 @-ms-keyframes "pulse" {
  0% {
    -ms-transform: scale(1);
