@@ -1,9 +1,9 @@
 body {
-  background-image: url("bg.jpg");
+  background-image: url("bg2.jpg");
   background-position: left top;
   background-attachment: fixed;
   background-repeat: repeat;
-  background-size: 1100px;
+  background-size: 1050px;
   text-align: justify;
   color: #000;
   margin: 0;
@@ -224,7 +224,7 @@ footer a:hover {
 }
 @media (max-width: 900px) {  /* styles for smaller screens */
    body {
-    background-size: 1300px;
+    background-size: 1400px;
    }
   #wrap {
     width: 100%;
