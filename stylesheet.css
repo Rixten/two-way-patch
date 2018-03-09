@@ -15,7 +15,7 @@ body {
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
-  margin-top: 17%;
+  margin-top: 15vw;
   padding: 0px;
 }
 ul.ul1 {   /* unorganised list general styles */
@@ -29,6 +29,8 @@ ul.ul1 {   /* unorganised list general styles */
 li.reg {    /* styles for the emotion bubbles */
   display: inline-block;
   box-sizing: border-box;
+  line-height: 11vw;
+  vertical-align: middle;
   border-radius: 50%;
   cursor: pointer;
   width: 11vw;
@@ -36,13 +38,12 @@ li.reg {    /* styles for the emotion bubbles */
   color: transparent;
   overflow: hidden;
 }
-#trick {
+#trick {  /* div for the fade effect on hover over a bubble */
   display: inline-block;
   box-sizing: border-box;
   border-radius: 50%;
   width: 100%;
   height: 160px;
-  padding-top: 65px;
   color: transparent;
   overflow: hidden;
   font-family: 'Quantico', sans-serif;
@@ -50,11 +51,11 @@ li.reg {    /* styles for the emotion bubbles */
   -webkit-transition-duration: 0.6s; /* Safari */
   transition-duration: 0.6s;
 }
-#trick:hover {
+#trick:hover {  /* what actually happens on hover */
   background-color: rgba(0,0,0,0.8);
   color: #fff;
 }
-li.reg.em1 {
+li.reg.em1 {  /* codes for each bubble (pics) */
   background-image: url("em1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -90,13 +91,13 @@ li.reg.em6 {
   background-size: cover;
   margin-left: 1vw;
 }
-li.reg:hover {
+li.reg:hover {  /* styles for text on hover over a bubble */
   color: #fff;
   text-shadow: 2px 2px 5px #000;
   font-family: 'Quantico', sans-serif;
   font-size: 25px;
 }
-ul.ul2 {
+ul.ul2 {  /* styles for the center bubble */
   margin-top: 0px;
   width: 100%;
   box-sizing: border-box;
@@ -104,7 +105,7 @@ ul.ul2 {
   color: #fff;
   padding: 0px;
 }
-li.cent {   /* styles for the center bubble */
+li.cent {   /* cont. styles for the center bubble */
   display: inline-block;
   background-color: rgba(0,0,0,0.8);
   box-sizing: border-box;
@@ -198,12 +199,12 @@ li.cent:hover {
 
 }
 @media (max-width: 1000px) {  /* styles for smaller screens */
-  #wrap {  /* wrap div to enclose the elements */
+  #wrap {
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
     margin-top: 5%;
-    padding: 0px;
+    margin-bottom: 10vw;
   }
   ul.ul1 {
     margin-top: 0px;
