@@ -3,7 +3,7 @@ body {
   background-position: left top;
   background-attachment: fixed;
   background-repeat: repeat;
-  background-size: 1050px;
+  background-size: 1100px;
   text-align: justify;
   color: #000;
   margin: 0;
@@ -13,8 +13,48 @@ body {
   min-height: 100%;
   margin: 0 auto;
   box-sizing: border-box;
-  margin-top: 15vw;
+  margin-top: 6vw;
+  margin-bottom: 8vw;
   padding: 0px;
+}
+header {
+  width: 100%;
+  height: 120px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.cont {
+  display: none;
+  font-family: 'Assistant', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 28px;
+}
+header h1 {
+  margin-bottom: 25px;
+  margin-top: 0px;
+  letter-spacing: -4px;
+  font-family: 'Text Me One', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+}
+#info {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+.words {
+  display: none;
+  box-sizing: border-box;
+  height: 6px;
+  padding: 7px;
+  border: 1px solid #aaa;
+  background: rgba(0,0,0,0.1);
+  font-family: 'Assistant', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
 }
 ul.ul1 {   /* unorganised list general styles */
   width: 100%;
@@ -27,6 +67,7 @@ ul.ul1 {   /* unorganised list general styles */
 li.reg {    /* styles for the emotion bubbles */
   display: inline-block;
   box-sizing: border-box;
+  position: relative;
   line-height: 11vw;
   vertical-align: middle;
   border-radius: 50%;
@@ -37,9 +78,8 @@ li.reg {    /* styles for the emotion bubbles */
   width: 11vw;
   height: 11vw;
   color: transparent;
-  overflow: hidden;
 }
-.trick {  /* div for the fade effect on hover over a bubble */
+.trick {   /*div for the fade effect on hover over a bubble*/
   display: inline-block;
   box-sizing: border-box;
   border-radius: 50%;
@@ -48,7 +88,7 @@ li.reg {    /* styles for the emotion bubbles */
   margin: 0;
   color: transparent;
   overflow: hidden;
-  -webkit-transition-duration: 0.6s; /* Safari */
+  -webkit-transition-duration: 0.6s;
   transition-duration: 0.6s;
 }
 .trick:hover {  /* what actually happens on hover */
@@ -120,20 +160,13 @@ li.cent {   /* cont. styles for the center bubble */
   font-family: 'Megrim', cursive;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 54px;
   text-shadow: 1px 1px 3px #000;
-  -webkit-transition-duration: 0.5s; /* Safari */
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.9s; /* Safari */
+  transition-duration: 0.9s;
 }
 li.cent:hover {
   background-color: #000;
-}
-.about {
-   display: none;
- }
-.name {
-  display: block;
-  visibility: visible;
 }
 footer {
   position: absolute;
@@ -146,21 +179,21 @@ footer {
   text-align: right;
   font-weight: bold;
   font-family: Arial;
-  color: #4a5360;
+  color: #4f4f4f;
   font-size: 11px;
 }
 footer a {
   text-decoration: none;
-  color: #4a5360;
+  color: #4f4f4f;
 }
 footer a:hover {
-  color: #4a5360;
+  color: #4f4f4f;
 }
 .tex.name {
-  display: block;
+  display: none;
 }
 .tex.about {
-  display: none;
+  display: block;
 }
 .pulse {        /* pulse effect code */
 	-webkit-animation: pulse 4s linear infinite;
@@ -235,7 +268,7 @@ footer a:hover {
 }
 @media (max-width: 1250px) {
   li.cent {
-    font-size: 20px;
+    font-size: 38px;
   }
 }
 @media (max-width: 900px) {  /* styles for smaller screens */
@@ -260,13 +293,12 @@ footer a:hover {
     text-align: center;
     font-weight: bold;
     font-family: Arial;
-    color: #4a5360;
+    color: #4f4f4f;
     font-size: 12px;
   }
   ul.ul1 {
     margin-top: 0px;
     width: 100%;
-/*    margin-left: 17vw; */
   }
   ul.ul2 {
     margin-top: 0px;
@@ -339,7 +371,7 @@ li.cent {
   line-height: 50vw;
   vertical-align: middle;
   margin-bottom: 15px;
-  font-size: 29px;
+  font-size: 45px;
 }
 li.reg.em1 {
   background-image: url("em1.jpg");
@@ -382,6 +414,4 @@ li.reg.em6 {
   background-size: cover;
   margin: 0 auto;
   margin-top: 25px;
-}
-
 }

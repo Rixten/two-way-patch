@@ -3,8 +3,11 @@
 <head>
 
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<link href="https://fonts.googleapis.com/css?family=Megrim|Quantico" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Rajdhani|Unica+One" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Megrim|Rajdhani" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <title>Our website title</title>
@@ -15,17 +18,22 @@
 
 <div id="wrap"> <!-- wrap div to enclose content -->
 
+<header><span class="cont"> <!-- heading -->
+<h1>Welcome!</h1>
+For more information, click about.<br />
+How did you feel about the Two-way-patch?
+</header>
+
   <ul class="ul2"> <!-- center bubble -->
   <li class="cent pulse">
 
-    <div class="tex name">Two-way-patch</div>
+    <div class="tex name">Two-Way-Patch</div>
     <div class="tex about">About</div>
 
   </li>
   </ul>
 
-<ul class="ul1"> <!-- emotion bubbles -->
-
+<ul class="ul1">
 <li class="reg em1"><div class="trick right">curious</div></li>
 <li class="reg em2"><div class="trick left">excited</div></li>
 <li class="reg em3"><div class="trick right">active</div></li>
@@ -33,10 +41,16 @@
 <li class="reg em4"><div class="trick left">sceptical</div></li>
 <li class="reg em5"><div class="trick right">angry</div></li>
 <li class="reg em6"><div class="trick left">scared</div></li>
-
 </ul>
 
 </div> <!-- end of "wrap" -->
+
+<div id="info">
+<span class="words">
+Is this how the exhibition made you feel?
+</span>
+</div>
+
 
 <footer> <!-- footer -->
 Design by SaFire 2018 | Artworks &copy; <a href="" target="_blank">address</a>
@@ -46,13 +60,23 @@ Design by SaFire 2018 | Artworks &copy; <a href="" target="_blank">address</a>
 
 <script> /* javascript starts here */
 
-$(".cent").mouseenter(function() { /* when mouse enters .cent */
-  $(".tex").slideToggle("500", "linear"); /* hide name */
+$(".cent").mouseenter(function() {  /* toggle the heading */
+  $(".cont").slideToggle("600", "linear");
 });
 
-$(".cent").mouseleave(function() { /* when mouse leaves .cent */
-  $(".tex").slideToggle("500", "linear"); /* hide "about" */
+$(".cent").mouseleave(function() {
+  $(".cont").slideToggle("600", "linear");
 });
+
+
+$(".reg").mouseenter(function() {   /* toggle the info box */
+  $(".words").slideToggle("600", "linear");
+});
+
+$(".reg").mouseleave(function() {
+  $(".words").slideToggle("600", "linear");
+});
+
 
 </script>
 </html>
