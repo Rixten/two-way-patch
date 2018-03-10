@@ -13,7 +13,7 @@ body {
   min-height: 100%;
   margin: 0 auto;
   box-sizing: border-box;
-  margin-top: 4vw;
+  margin-top: 3vw;
   margin-bottom: 8vw;
   padding: 0px;
 }
@@ -203,11 +203,17 @@ footer a:hover {
 .mobilecont {
   display: none;
 }
-.pulse {        /* pulse effect code */
+.pulse1 {        /*  .cent pulse code */
 	-webkit-animation: pulse 4s linear infinite;
 	-moz-animation: pulse 4s linear infinite;
 	-ms-animation: pulse 4s linear infinite;
 	animation: pulse 4s linear infinite;
+}
+.pulse2:hover {        /* .reg pulse code */
+	-webkit-animation: pulse 2s linear infinite;
+	-moz-animation: pulse 2s linear infinite;
+	-ms-animation: pulse 2s linear infinite;
+	animation: pulse 2s linear infinite;
 }
 @keyframes "pulse" {
  0% {
@@ -218,11 +224,11 @@ footer a:hover {
    	transform: scale(1);
  }
  50% {
-    -webkit-transform: scale(0.8);
-   	-moz-transform: scale(0.8);
-   	-o-transform: scale(0.8);
-   	-ms-transform: scale(0.8);
-   	transform: scale(0.8);
+    -webkit-transform: scale(0.9);
+   	-moz-transform: scale(0.9);
+   	-o-transform: scale(0.9);
+   	-ms-transform: scale(0.9);
+   	transform: scale(0.9);
  }
  100% {
     -webkit-transform: scale(1);

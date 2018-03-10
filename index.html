@@ -8,7 +8,9 @@
 <link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.hoverintent/1.9.0/jquery.hoverIntent.js"></script>
+
 
 <title>Our website title</title>
 
@@ -38,7 +40,7 @@
 <div id="wrap"> <!-- wrap div to enclose content -->
 
   <ul class="ul2"> <!-- center bubble -->
-  <li class="cent pulse">
+  <li class="cent pulse pulse1">
 
     <div class="tex name">Two-Way-Patch</div>
     <div class="tex about">About</div>
@@ -47,13 +49,13 @@
   </ul>
 
 <ul class="ul1">
-<li class="reg em1"><div class="trick right">curious</div></li>
-<li class="reg em2"><div class="trick left">excited</div></li>
-<li class="reg em3"><div class="trick right">active</div></li>
+<li class="reg em1 pulse pulse2"><div class="trick right">curious</div></li>
+<li class="reg em2 pulse pulse2"><div class="trick left">excited</div></li>
+<li class="reg em3 pulse pulse2"><div class="trick right">active</div></li>
 
-<li class="reg em4"><div class="trick left">sceptical</div></li>
-<li class="reg em5"><div class="trick right">angry</div></li>
-<li class="reg em6"><div class="trick left">scared</div></li>
+<li class="reg em4 pulse pulse2"><div class="trick left">sceptical</div></li>
+<li class="reg em5 pulse pulse2"><div class="trick right">angry</div></li>
+<li class="reg em6 pulse pulse2"><div class="trick left">scared</div></li>
 </ul>
 
 </div> <!-- end of "wrap" -->
@@ -67,31 +69,12 @@ Design by SaFire 2018 | Artworks &copy; <a href="" target="_blank">address</a>
 
 <script> /* javascript starts here */
 
-// heading js
-$(".cent").mouseenter(function() { // when mouse enters .cent
-    setTimeout(function(){ // delay the action
-      $(".cont").slideToggle("600", "linear"); // show heading
-    }, 300);
-});
+// TOGGLE HEADING
+$(".cent").hoverIntent(function() {$(".cont").slideToggle("600", "linear");}, 400);
 
-$(".cent").mouseleave(function() { // when mouse leaves .cent
-    setTimeout(function() { // delay the action
-      $(".cont").slideToggle("600", "linear"); // hide heading
-    }, 200);
-});
+// TOGGLE INFO BOX
+$(".reg").hoverIntent(function() {$(".words").slideToggle("600", "linear");}, 400);
 
-// info box js
-$(".reg").mouseenter(function() { // when mouse enters an emotion bubble
-    setTimeout(function() { // delay the action
-      $(".words").slideToggle("600", "linear"); // show info box
-    }, 300);
-});
-
-$(".reg").mouseleave(function() {
-    setTimeout(function() { // delay the action
-      $(".words").slideToggle("600", "linear"); // hide info box
-    }, 200);
-});
 
 </script>
 </html>
