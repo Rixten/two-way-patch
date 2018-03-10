@@ -161,7 +161,7 @@ li.cent {   /* cont. styles for the center bubble */
   font-family: 'Megrim', cursive;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 54px;
+  font-size: 50px;
   text-shadow: 1px 1px 3px #000;
   -webkit-transition-duration: 0.9s; /* Safari */
   transition-duration: 0.9s;
@@ -323,7 +323,7 @@ footer a:hover {
     width: 18vw;
     height: 5vw;
     margin: 0 auto;
-    margin-top: 13vw;
+    margin-top: 12vw;
     margin-left: -18vw;
     padding-right: 0px;
     color: #000;
@@ -340,7 +340,7 @@ footer a:hover {
     width: 18vw;
     height: 5vw;
     margin: 0 auto;
-    margin-top: 13vw;
+    margin-top: 12vw;
     margin-left: 25vw;
     padding-right: 0px;
     color: #000;
