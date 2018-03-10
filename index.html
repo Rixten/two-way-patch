@@ -16,11 +16,24 @@
 
 <body>
 
-  <header><span class="cont"> <!-- heading -->
-  <h1>Welcome!</h1>
-  For more information, click about.<br />
-  How did you feel about the Two-way-patch?
+  <header>
+  <span class="cont"> <!-- heading for regular layout -->
+  <h1>Welcome to the guestbook</h1>
+  For more information, click about.
+</span>
   </header>
+
+  <div id="mobilehead">
+  <span class="mobilecont"> <!-- heading for mobile layout-->
+  <h1>Welcome to the guestbook</h1>
+  For more information, click about.
+</span>
+</div>
+
+<div id="info">
+  <span class="words">
+  Is this how the exhibition made you feel?
+</span></div>
 
 <div id="wrap"> <!-- wrap div to enclose content -->
 
@@ -45,12 +58,6 @@
 
 </div> <!-- end of "wrap" -->
 
-<div id="info">
-<span class="words">
-Is this how the exhibition made you feel?
-</span>
-</div>
-
 
 <footer> <!-- footer -->
 Design by SaFire 2018 | Artworks &copy; <a href="" target="_blank">address</a>
@@ -60,23 +67,31 @@ Design by SaFire 2018 | Artworks &copy; <a href="" target="_blank">address</a>
 
 <script> /* javascript starts here */
 
-$(".cent").mouseenter(function() {  /* toggle the heading */
-  $(".cont").slideToggle("600", "linear");
+// heading js
+$(".cent").mouseenter(function() { // when mouse enters .cent
+    setTimeout(function(){ // delay the action
+      $(".cont").slideToggle("600", "linear"); // show heading
+    }, 300);
 });
 
-$(".cent").mouseleave(function() {
-  $(".cont").slideToggle("600", "linear");
+$(".cent").mouseleave(function() { // when mouse leaves .cent
+    setTimeout(function() { // delay the action
+      $(".cont").slideToggle("600", "linear"); // hide heading
+    }, 300);
 });
 
-
-$(".reg").mouseenter(function() {   /* toggle the info box */
-  $(".words").slideToggle("600", "linear");
+// info box js
+$(".reg").mouseenter(function() { // when mouse enters an emotion bubble
+    setTimeout(function() { // delay the action
+      $(".words").slideToggle("600", "linear"); // show info box
+    }, 300);
 });
 
 $(".reg").mouseleave(function() {
-  $(".words").slideToggle("600", "linear");
+    setTimeout(function() { // delay the action
+  $(".words").slideToggle("600", "linear"); // hide info box
+    }, 300);
 });
-
 
 </script>
 </html>
