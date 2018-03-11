@@ -169,24 +169,44 @@ li.cent:hover {
 }
 footer {
   position: absolute;
-  width: 100%;
+  width: 200px;
   box-sizing: border-box;
-  height: 35px;
-  left: 0;
+  text-align: center;
+  background-color: rgba(0,0,0,0.2);
+  height: 30px;
+  right: 5vw;
   bottom: 0;
-  padding: 0px 25px 10px 0px;
-  text-align: right;
+  padding: 10px 0px 0px 0px;
+  -webkit-transition:all 1s ease;
+  -moz-transition:all 1s ease;
+  transition:all 1s ease;
+}
+footer:hover {
+  height: 80px;
+}
+footer span {
+  cursor: default;
+}
+.copy {
+  display: none;
   font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   font-family: Arial;
-  color: #4f4f4f;
+  color: #212121;
   font-size: 10px;
+}
+#mobilefooter {
+  display: none;
+  height: 0px;
+  color: transparent;
 }
 footer a {
   text-decoration: none;
-  color: #4f4f4f;
+  color: #212121;
 }
 footer a:hover {
-  color: #4f4f4f;
+  color: #212121;
 }
 .tex.name {
   display: none;
@@ -286,8 +306,7 @@ footer a:hover {
   }
 }
 @media (max-width: 900px) {  /* styles for smaller screens */
-   body {
-    background-size: 1400px;
+   body { background-size: 1400px;
    }
   #wrap {
     width: 100%;
@@ -330,18 +349,53 @@ footer a:hover {
     font-weight: bold;
   }
   footer {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: transparent;
+    height: 0px;
+    overflow: hidden;
+    bottom: 0px;
+    right: 0px;
+    padding: 0px;
+  }
+footer:hover { height: 0px; overflow: hidden;
+}
+  .copy {
+    display: none;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0px;
+    color: transparent;
+  }
+  .copy:hover {
+    display: none;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0px;
+    color: transparent;
+  }
+  .copy a { display: none; color: transparent;
+  }
+  #mobilefooter {
+    display: block;
     position: relative;
     width: 100%;
     box-sizing: border-box;
     height: 40px;
-    top: 5px;
     bottom: 10px;
-    padding: 0px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    line-height: 19px;
     text-align: center;
     font-weight: bold;
     font-family: Arial;
-    color: #4f4f4f;
+    color: #212121;
     font-size: 12px;
+  }
+  #mobilefooter a { color: #212121; text-decoration: none;
+  }
+  #mobilefooter a:hover { color: #212121;
   }
   ul.ul1 {
     margin-top: 0px;

@@ -60,20 +60,29 @@
 
 </div> <!-- end of "wrap" -->
 
-
 <footer> <!-- footer -->
-Design by SaFire 2018 | Artworks &copy; <a href="" target="_blank">address</a>
+<span class="copy">Design by SaFire 2018<br />
+Artworks &copy; <a href="" target="_blank">address</a></span>
+</footer>
+
+<div id="mobilefooter">
+Design by SaFire 2018<br />
+Artworks &copy; <a href="" target="_blank">address</a>
 </div>
+
 
 </body>
 
 <script> /* javascript starts here */
 
+// TOGGLE COPYRIGHT
+$("footer").hoverIntent(function() {$(".copy").slideToggle("300", "linear");}, 800);
+
 // TOGGLE HEADING
-$(".cent").hoverIntent(function() {$(".cont").slideToggle("600", "linear");}, 400);
+$(".cent").hoverIntent(function() {$(".cont").slideToggle("600", "linear");}, 800);
 
 // TOGGLE INFO BOX
-$(".reg").hoverIntent(function() {$(".words").slideToggle("600", "linear");}, 400);
+$(".reg").hoverIntent(function() {$(".words").slideToggle("600", "linear");}, 800);
 
 
 </script>
