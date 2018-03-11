@@ -169,12 +169,12 @@ li.cent:hover { background-color: #000;
 }
 footer {  /* general footer styles */
   position: absolute;
-  width: 200px;
+  width: 165px;
   box-sizing: border-box;
   text-align: center;
   background-color: rgba(0,0,0,0.2);
-  height: 30px;
-  right: 5vw;
+  height: 25px;
+  right: 2vw;
   bottom: 0;
   padding: 10px 0px 0px 0px;
   -webkit-transition:all 1s ease; /* grow/shrink effect */
