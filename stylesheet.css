@@ -303,7 +303,7 @@ footer a:hover { color: #212121;
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
-    margin-top: 1vw;
+    margin-top: 0vw;
     margin-bottom: 10vw;
   }
   header {  /* stops normal header from showing */
@@ -317,7 +317,7 @@ footer a:hover { color: #212121;
   #mobilehead {  /* mobile header styles */
     display: block;
     width: 100%;
-    height: 140px;
+    height: 90px;
     margin: 0 auto;
     margin-top: 7vw;
     text-align: center;
@@ -331,10 +331,10 @@ footer a:hover { color: #212121;
     line-height: 28px;
   }
   #mobilehead h1 {
-    margin-bottom: 25px;
+    margin-bottom: 0px;
     margin-top: 0px;
     letter-spacing: -2px;
-    line-height: 38px;
+    line-height: 40px;
     font-family: 'Text Me One', sans-serif;
     font-size: 50px;
     font-weight: bold;
@@ -347,8 +347,7 @@ footer a:hover { color: #212121;
     background-color: transparent;
     height: 0px;
     overflow: hidden;
-    bottom: 0px;
-    right: 0px;
+    margin-bottom: 0px;
     padding: 0px;
   }
 footer:hover { height: 0px; overflow: hidden;
@@ -374,8 +373,9 @@ footer:hover { height: 0px; overflow: hidden;
     position: relative;
     width: 100%;
     box-sizing: border-box;
-    height: 40px;
-    bottom: 10px;
+    height: 60px;
+    bottom: 2vw;
+    margin: 0 auto;
     padding: 10px 0px 10px 0px;
     line-height: 19px;
     text-align: center;
@@ -390,6 +390,7 @@ footer:hover { height: 0px; overflow: hidden;
   }
   ul.ul1 {  /* mobile general list styles */
     margin-top: 0px;
+    margin: 0 auto;
     width: 100%;
   }
   ul.ul2 {
