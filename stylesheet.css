@@ -9,7 +9,7 @@ body {
   color: #000;
   margin: 0;
 }
-a {
+a { /* general link styles */
   color: #e03d21;
   text-decoration: none;
   -webkit-transition-duration: 1.5s;
@@ -87,7 +87,7 @@ li.reg {    /* styles for the emotion bubbles */
   height: 11vw;
   color: transparent;
 }
-li.reg a {
+.reg a {
   font-family: 'Rajdhani', sans-serif;
   font-size: 25px;
   color: transparent;
@@ -96,8 +96,8 @@ li.reg a {
   -webkit-transition-duration: 0.9s;
   transition-duration: 0.9s;
 }
-li.reg a:hover { color: #fff; text-decoration: none; }
-li.reg:hover a {
+.reg a:hover { color: #fff; text-decoration: none; }
+.reg:hover a {
   color: #fff;
   text-shadow: 2px 2px 5px #000;
   font-family: 'Rajdhani', sans-serif;
