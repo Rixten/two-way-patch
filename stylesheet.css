@@ -201,9 +201,9 @@ li.cent:hover a { color: #fff; text-decoration: none;
 .gif_images {
     display: block;
     margin-left: auto;
-    margin-top: 5vw;
+    margin-top: 2vw;
     margin-right: auto;
-    width: 50%;
+    width: 30vw;
 }
 .ECA_text {
   font-family: 'Rajdhani', sans-serif;
@@ -212,6 +212,7 @@ li.cent:hover a { color: #fff; text-decoration: none;
   font-size: 35px;
   letter-spacing: -2px;
   font-weight: bold;
+  margin-bottom: 1vw;
 }
 footer {  /* general footer styles */
   position: absolute;
@@ -260,32 +261,38 @@ footer a:hover { color: #212121;
   width: 0px;
   height: 0px;
 }
+#mobilehead2 {
+  display: none;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+}
 #back {
   background-color: rgba(0,0,0,0.2);
-  width: 8vw;
-  height: 8vw;
+  width: 6vw;
+  height: 6vw;
   border-radius: 50%;
   margin: 0 auto;
-  line-height: 8vw;
+  line-height: 6vw;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
   color: #000;
   text-shadow: none;
   font-family: 'Rajdhani', sans-serif;
-  font-size: 2vw;
-  margin-bottom: 4vw;
+  font-size: 1.6vw;
+  margin-bottom: 1.5vw;
   -webkit-transition-duration: 0.6s; /* Safari */
   transition-duration: 0.6s;
 }
 #back:hover {
-  width: 9vw;
-  height: 9vw;
-  line-height: 9vw;
-  font-size: 2vw;
+  width: 7vw;
+  height: 7vw;
+  line-height: 7vw;
+  font-size: 1.6vw;
   text-align: center;
   vertical-align: middle;
-  margin-bottom: 4vw;
+  margin-bottom: 2vw;
   background-color: rgba(0,0,0,0.3);
 }
 .mobilecont { display: none;
@@ -394,6 +401,7 @@ footer a:hover { color: #212121;
      text-shadow: none;
      font-family: 'Rajdhani', sans-serif;
      font-size: 3.5vw;
+     margin-top: 4vw;
      margin-bottom: 4vw;
      -webkit-transition-duration: 0.6s; /* Safari */
      transition-duration: 0.6s;
@@ -402,6 +410,7 @@ footer a:hover { color: #212121;
      width: 14vw;
      height: 14vw;
      line-height: 14vw;
+     margin-top: 4vw;
      margin-bottom: 4vw;
      font-size: 3.5vw;
      text-align: center;
@@ -428,9 +437,9 @@ footer a:hover { color: #212121;
 .gif_images {
     display: block;
     margin-left: auto;
-    margin-top: 5vw;
+    margin-top: 6vw;
     margin-right: auto;
-    width: 50%;
+    width: 50vw;
 }
   header {  /* stops normal header from showing */
     width: 100%;
@@ -448,6 +457,14 @@ footer a:hover { color: #212121;
     margin-top: 7vw;
     text-align: center;
   }
+  #mobilehead2 {  /* mobile header styles for emotion pages */
+    display: block;
+    width: 100%;
+    height: 130px;
+    margin: 0 auto;
+    margin-top: 7vw;
+    text-align: center;
+  }
   .mobilecont {
     display: block;
     visibility: visible;
@@ -457,6 +474,15 @@ footer a:hover { color: #212121;
     line-height: 28px;
   }
   #mobilehead h1 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    letter-spacing: -2px;
+    line-height: 40px;
+    font-family: 'Text Me One', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  #mobilehead2 h1 {
     margin-bottom: 0px;
     margin-top: 0px;
     letter-spacing: -2px;
