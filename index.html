@@ -5,15 +5,17 @@
 
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
+<!-- fonts -->
 <link href="https://fonts.googleapis.com/css?family=Megrim|Rajdhani" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.hoverintent/1.9.0/jquery.hoverIntent.js"></script>
+<!-- scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="hoverIntent/jquery.hoverIntent.js"></script>
+<script src="hoverIntent/bower.json"></script>
 
-
-<title>Our website title</title>
+<title>Guestbook | Two-way-patch</title>
 
 </head>
 
@@ -75,14 +77,16 @@ Artworks &copy; <a href="" target="_blank">address</a>
 
 <script> /* javascript starts here */
 
-// TOGGLE COPYRIGHT
-$("footer").hoverIntent(function() {$(".copy").slideToggle("400", "linear");}, 1000);
+$(document).ready(function(){
+// toggle info box
+$(".reg").hoverIntent(function() {$(".words").slideToggle("800", "linear");},{timeout: 10000});
 
-// TOGGLE HEADING
-$(".cent").hoverIntent(function() {$(".cont").slideToggle("800", "linear");}, 1000);
+//toggle heading
+$(".cent").hoverIntent(function() {$(".cont").slideToggle("800", "linear");},{timeout: 10000});
 
-// TOGGLE INFO BOX
-$(".reg").hoverIntent(function() {$(".words").slideToggle("800", "linear");}, 1000);
+// toggle copyright
+$("footer").hoverIntent(function() {$(".copy").slideToggle("500", "linear");},{timeout: 10000});
+}); // close document ready
 
 
 </script>
