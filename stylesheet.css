@@ -576,6 +576,7 @@ footer:hover { height: 0px; overflow: hidden;
   .trick.right {
     border-top: 1px dashed #919191;
     background-color: transparent;
+    color: #000;
     position: absolute;
     display: block;
     box-sizing: border-box;
