@@ -111,7 +111,7 @@ li.reg:hover a {
   color: #fff;
 }
 li.reg.em1 {  /* styles for each bubble (pics) */
-  background-image: url("curious face 2.jpg");
+  background-image: url("curiousface.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-right: 1vw;
