@@ -188,6 +188,20 @@ li.cent a {
 li.cent a:hover { color: #fff; text-decoration: none; }
 li.cent:hover a { color: #fff; text-decoration: none;
 }
+.gif_images {
+    display: block;
+    margin-left: auto;
+    margin-top: 40px;
+    margin-right: auto;
+    width: 50%;
+}
+.ECA_text {
+  font-family: 'Rajdhani', sans-serif;
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
 footer {  /* general footer styles */
   position: absolute;
   width: 165px;
