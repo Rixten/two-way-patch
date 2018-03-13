@@ -111,19 +111,19 @@ li.reg:hover a {
   color: #fff;
 }
 li.reg.em1 {  /* styles for each bubble (pics) */
-  background-image: url("");
+  background-image: url("curious face 2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-right: 1vw;
 }
 li.reg.em2 {
-  background-image: url("");
+  background-image: url("excited face.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-right: 1vw;
 }
 li.reg.em3 {
-  background-image: url("");
+  background-image: url("awed cropped.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-right: 10vw;
