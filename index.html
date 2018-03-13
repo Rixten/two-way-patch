@@ -1,33 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- design by Team SaFire 2018 -->
 
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+<link href="https://fonts.googleapis.com/css?family=Megrim|Rajdhani" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.hoverintent/1.9.0/jquery.hoverIntent.js"></script>
+
+
 <title>Our website title</title>
 
 </head>
 
 <body>
 
-<div id="wrap">
-<ul>
+  <header>
+  <span class="cont"> <!-- heading for regular layout -->
+  <h1>Welcome to the guestbook</h1>
+  This link will take you to the about page.
+</span>
+  </header>
 
-<li class="reg">curious</li>
-<li class="reg">scared</li>
-<li class="reg">angry</li>
-
-<li class="cent">about</li>
-
-<li class="reg">excited</li>
-<li class="reg">active</li>
-<li class="reg">happy</li>
-
-</ul>
+  <div id="mobilehead">
+  <span class="mobilecont"> <!-- heading for mobile layout-->
+  <h1>Welcome to the guestbook</h1>
+</span>
 </div>
+
+<div id="info">
+  <span class="words">
+  Is this how the exhibition made you feel?
+</span></div>
+
+<div id="wrap"> <!-- wrap div to enclose content -->
+
+  <ul class="ul2"> <!-- center bubble -->
+  <li class="cent pulse pulse1">
+
+    <div class="tex name">Two-Way-Patch</div>
+    <div class="tex about"><a href="about.html">About</a></div>
+
+  </li>
+  </ul>
+
+<ul class="ul1">
+<li class="reg em1 pulse pulse2"><div class="trick right"><a href="">curious</a></div></li>
+<li class="reg em2 pulse pulse2"><div class="trick left"><a href="">excited</a></div></li>
+<li class="reg em3 pulse pulse2"><div class="trick right"><a href="">active</a></div></li>
+
+<li class="reg em4 pulse pulse2"><div class="trick left"><a href="">sceptical</a></div></li>
+<li class="reg em5 pulse pulse2"><div class="trick right"><a href="">angry</a></div></li>
+<li class="reg em6 pulse pulse2"><div class="trick left"><a href="">scared</a></div></li>
+</ul>
+
+</div> <!-- end of "wrap" -->
+
+<footer> <!-- footer -->
+<span class="copy">Design by SaFire 2018<br />
+Artworks &copy; <a href="" target="_blank">address</a></span>
+</footer>
+
+<div id="mobilefooter">
+Design by SaFire 2018<br />
+Artworks &copy; <a href="" target="_blank">address</a>
+</div>
+
 
 </body>
 
-<script>
-// javascript tag //
+<script> /* javascript starts here */
+
+// TOGGLE COPYRIGHT
+$("footer").hoverIntent(function() {$(".copy").slideToggle("400", "linear");}, 1000);
+
+// TOGGLE HEADING
+$(".cent").hoverIntent(function() {$(".cont").slideToggle("800", "linear");}, 1000);
+
+// TOGGLE INFO BOX
+$(".reg").hoverIntent(function() {$(".words").slideToggle("800", "linear");}, 1000);
+
+
 </script>
 </html>
