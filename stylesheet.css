@@ -82,6 +82,7 @@ li.reg a {
   font-size: 25px;
   color: transparent;
   text-decoration: none;
+  text-shadow: none;
   -webkit-transition-duration: 0.9s;
   transition-duration: 0.9s;
 }
@@ -140,7 +141,7 @@ li.reg.em5 {
   margin-left: 1vw;
 }
 li.reg.em6 {
-  background-image: url("em1.jpg");
+  background-image: url("scared1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 1vw;
@@ -516,7 +517,6 @@ li.reg.em4 {
   margin-top: 25px;
 }
 li.reg.em5 {
-
   margin: 0 auto;
   margin-top: 25px;
 }
