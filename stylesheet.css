@@ -35,9 +35,6 @@ header {  /* general header styles */
   text-align: center;
   margin-top: 5vw;
   margin-bottom: 0;
-}
-.cont {  /* header content styles */
-  display: none;
   font-family: 'Assistant', sans-serif;
   font-size: 20px;
   font-weight: normal;
@@ -269,12 +266,6 @@ footer a:hover { color: #212121;
 .tex.name { display: none; }
 .tex.about { display: block;
 }
-#mobilehead {  /* this is to stop the mobile header from showing */
-  display: none;
-  overflow: hidden;
-  width: 0px;
-  height: 0px;
-}
 #mobilehead2 {
   display: none;
   width: 0px;
@@ -455,20 +446,10 @@ footer a:hover { color: #212121;
     margin-right: auto;
     width: 50vw;
 }
-  header {  /* stops normal header from showing */
+  header {
     width: 100%;
-    height: 0px;
+    height: 70px;
     margin: 0 auto;
-    text-align: center;
-    visibility: hidden;
-    overflow: hidden;
-  }
-  #mobilehead {  /* mobile header styles */
-    display: block;
-    width: 100%;
-    height: 90px;
-    margin: 0 auto;
-    margin-top: 7vw;
     text-align: center;
   }
   #mobilehead2 {  /* mobile header styles for emotion pages */
@@ -479,15 +460,7 @@ footer a:hover { color: #212121;
     margin-top: 7vw;
     text-align: center;
   }
-  .mobilecont {
-    display: block;
-    visibility: visible;
-    font-family: 'Assistant', sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    line-height: 28px;
-  }
-  #mobilehead h1 {
+header h1 {
     margin-bottom: 0px;
     margin-top: 0px;
     letter-spacing: -2px;
