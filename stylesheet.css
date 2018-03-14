@@ -99,7 +99,7 @@ ul.ul1 {   /* unorganised list general styles */
   text-align: center;
   color: #fff;
   padding: 0px;
-  margin-top: -16.5vw;
+  margin-top: -17vw;
 }
 li.reg {    /* styles for the emotion bubbles */
   display: inline-block;
@@ -120,8 +120,8 @@ li.reg {    /* styles for the emotion bubbles */
   color: transparent;
   text-decoration: none;
   text-shadow: none;
-  -webkit-transition-duration: 0.9s;
-  transition-duration: 0.9s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
 }
 .reg a:hover { color: #fff; text-decoration: none; }
 .reg:hover a {
@@ -140,11 +140,12 @@ li.reg {    /* styles for the emotion bubbles */
   margin: 0;
   color: transparent;
   overflow: hidden;
-  -webkit-transition-duration: 0.9s;
-  transition-duration: 0.9s;
+  -webkit-transition-duration: 1.2s;
+  transition-duration: 1.2s;
 }
 .trick:hover {  /* what actually happens on hover */
   background-color: rgba(0,0,0,0.8);
+  text-shadow: none;
   color: #fff;
 }
 li.reg.em1 {  /* styles for each bubble (pics) */
