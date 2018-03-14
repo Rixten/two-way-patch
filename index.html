@@ -18,23 +18,19 @@
 <title>Guestbook | Two-way-patch</title>
 
 </head>
-
 <body>
 
-  <header>
-<!--  <span class="cont"> -->
-  <h1>Welcome to the guestbook</h1>
-  Learn more about the guestbook and the exhibition.
-<!-- </span> -->
-  </header>
+<div id="overlay"><div id="content">
+    <h1>Two-way-patch</h1>
+    <h2>Welcome to the guestbook</h2>
+    <small>Click anywhere to enter</small>
+</div></div> <!-- overlay div (testing) -->
 
 <!--
-  <div id="mobilehead">
-  <span class="mobilecont">
+  <header>
   <h1>Welcome to the guestbook</h1>
-</span>
-</div> -->
-
+  Learn more about the guestbook and the exhibition.
+</header> -->
 
 <div id="info">
   <span class="words">
@@ -74,19 +70,19 @@ Design by SaFire 2018<br />
 Artworks &copy; <a href="" target="_blank">address</a>
 </div>
 
-
 </body>
 
 <script> /* javascript starts here */
 
-$(document).ready(function(){
+$("#overlay").click(function() {
+    $("#overlay").fadeOut(800);
+});
+
 // toggle info box
 $(".reg").hoverIntent(function(){$(".words").slideToggle("1000", "linear");},{timeout: "10000"});
 
 // toggle copyright
 $("footer").hoverIntent(function(){$(".copy").slideToggle("800", "linear");},{timeout: "10000"});
-}); // close document ready
-
 
 </script>
 </html>
