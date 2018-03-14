@@ -131,7 +131,7 @@ li.reg {    /* styles for the emotion bubbles */
 }
 .reg a {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 25px;
+  font-size: 30px;
   color: transparent;
   text-decoration: none;
   text-shadow: none;
@@ -144,7 +144,7 @@ li.reg {    /* styles for the emotion bubbles */
   text-shadow: 2px 2px 5px #000;
   font-family: 'Rajdhani', sans-serif;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 30px;
 }
 .trick {   /* div for the fade effect on hover over a bubble */
   display: inline-block;
@@ -426,6 +426,8 @@ footer a:hover { color: #212121;
 }
 @media (max-width: 1250px) { /* styles for smaller screens */
   li.cent a { font-size: 56px; }
+  li.reg a { font-size: 26px; }
+  li.reg:hover a { font-size: 26px; }
   .gif_images {
       display: block;
       margin-left: auto;
@@ -436,6 +438,14 @@ footer a:hover { color: #212121;
 }
 @media (max-width: 900px) {
    body { background-size: 1400px;
+   }
+   #info {
+     height: 0px;
+     display: none;
+     visibility: hidden;
+   }
+   .words {
+     color: transparent;
    }
    #overlay {
      position: fixed;
@@ -645,12 +655,12 @@ li.reg a {
   font-family: 'Rajdhani', sans-serif;
   font-size: 22px;
 }
-li.reg a:hover { text-decoration: none; font-size: 19px; color: #000; text-shadow: none; }
+li.reg a:hover { text-decoration: none; font-size: 22px; color: #000; text-shadow: none; }
 li.reg:hover a {
   text-decoration: none;
   color: #000;
   text-shadow: none;
-  font-size: 19px;
+  font-size: 22px;
 }
 li.reg {
   display: block;
