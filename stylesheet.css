@@ -53,7 +53,7 @@ header h1 { /* header h1 heading styles */
   height: 35px;
   position: relative;
   margin: 0 auto;
-  margin-top: 0px;
+  margin-top: 3vw;
   text-align: center;
 }
 .words { /* info box content */
@@ -178,7 +178,6 @@ li.cent {   /* more styles for the center bubble */
   overflow: hidden;
   width: 19vw;
   height: 19vw;
-  border: 0px solid #fff;
   -webkit-transition-duration: 0.9s; /* Safari */
   transition-duration: 0.9s;
 }
@@ -190,7 +189,7 @@ li.cent a {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 50px;
-  text-shadow: 1px 1px 3px #000;
+  text-shadow: 1px 1px 1px #000;
 }
 li.cent a:hover { color: #fff; text-decoration: none; }
 li.cent:hover a { color: #fff; text-decoration: none;
