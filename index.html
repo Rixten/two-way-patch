@@ -28,11 +28,6 @@
     <br /><p><small>Click anywhere to enter</small></p>
 </div></div> <!-- overlay div (testing) -->
 
-<!--
-  <header>
-  <h1>Welcome to the guestbook</h1>
-  Learn more about the guestbook and the exhibition.
-</header> -->
 
 <div id="info">
   <span class="words">
@@ -43,16 +38,13 @@
 
   <ul class="ul2"> <!-- center bubble -->
   <li class="cent pulse pulse1">
-
-    <div class="tex name">Two-Way-Patch</div>
     <a href="about.html"><div class="tex about">About</div></a>
-
   </li>
   </ul>
 
 <ul class="ul1">
 <li class="reg em1 pulse pulse2"><a href="curious.html"><div class="trick right">curious</div></a></li>
-<li class="reg em2 pulse pulse2"><a href="excited.html"><div class="trick left">happy</div></a></li>
+<li class="reg em2 pulse pulse2"><a href="excited.html"><div class="trick left">excited</div></a></li>
 <li class="reg em3 pulse pulse2"><a href="awe.html"><div class="trick right">awed</div></a></li>
 
 <li class="reg em4 pulse pulse2"><a href="sceptical.html"><div class="trick left">sceptical</div></a></li>
@@ -81,10 +73,12 @@ $("#overlay").click(function() {
 });
 
 // toggle info box
-$(".reg").hoverIntent(function(){$(".words").slideToggle("1000", "linear");},{timeout: "10000"});
+$(".reg").hoverIntent(function(){$(".words").slideToggle("1000", "linear");},{timeout: "100"});
 
 // toggle copyright
-$("footer").hoverIntent(function(){$(".copy").slideToggle("800", "linear");},{timeout: "10000"});
+$("footer").hoverIntent(function(){$(".copy").fadeIn(500);},
+function(){$(".copy").fadeOut(500);},
+{timeout: "1500"});
 
 </script>
 </html>
