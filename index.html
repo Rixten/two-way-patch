@@ -22,17 +22,19 @@
 <body>
 
   <header>
-  <span class="cont"> <!-- heading for regular layout -->
+<!--  <span class="cont"> -->
   <h1>Welcome to the guestbook</h1>
   Learn more about the guestbook and the exhibition.
-</span>
+<!-- </span> -->
   </header>
 
+<!--
   <div id="mobilehead">
-  <span class="mobilecont"> <!-- heading for mobile layout-->
+  <span class="mobilecont">
   <h1>Welcome to the guestbook</h1>
 </span>
-</div>
+</div> -->
+
 
 <div id="info">
   <span class="words">
@@ -82,8 +84,10 @@ $(document).ready(function(){
 // toggle info box
 $(".reg").hoverIntent(function(){$(".words").slideToggle("1000", "linear");},{timeout: "10000"});
 
+/*
 //toggle heading
 $(".cent").hoverIntent(function(){$(".cont").slideToggle("1000", "linear");},{timeout: "10000"});
+*/
 
 // toggle copyright
 $("footer").hoverIntent(function(){$(".copy").slideToggle("800", "linear");},{timeout: "10000"});
