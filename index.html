@@ -18,22 +18,15 @@
 <title>Guestbook | Two-way-patch</title>
 
 </head>
-
 <body>
 
-  <header>
-<!--  <span class="cont"> -->
-  <h1>Welcome to the guestbook</h1>
-  Learn more about the guestbook and the exhibition.
-<!-- </span> -->
-  </header>
+<div id="overlay"><div id="content">
+    <h1>Two-way-patch</h1>
+    <h2>Welcome to the guestbook</h2>
 
-<!--
-  <div id="mobilehead">
-  <span class="mobilecont">
-  <h1>Welcome to the guestbook</h1>
-</span>
-</div> -->
+    <p>If you visited the exhibition, you can indicate how it made you feel</p>
+    <br /><p><small>Click anywhere to enter</small></p>
+</div></div> <!-- overlay div (testing) -->
 
 
 <div id="info">
@@ -45,54 +38,48 @@
 
   <ul class="ul2"> <!-- center bubble -->
   <li class="cent pulse pulse1">
-
-    <div class="tex name">Two-Way-Patch</div>
     <a href="about.html"><div class="tex about">About</div></a>
-
   </li>
   </ul>
 
 <ul class="ul1">
-<li class="reg em1 pulse pulse2"><a href="curious.html"><div class="trick right">curious</div></a></li>
-<li class="reg em2 pulse pulse2"><a href="excited.html"><div class="trick left">happy</div></a></li>
-<li class="reg em3 pulse pulse2"><a href="awe.html"><div class="trick right">awed</div></a></li>
+<a href="curious.html"><li class="reg em1 pulse pulse2"><div class="trick right">curious</div></li></a>
+<a href="excited.html"><li class="reg em2 pulse pulse2"><div class="trick left">excited</div></li></a>
+<a href="awe.html"><li class="reg em3 pulse pulse2"><div class="trick right">awed</div></li></a>
 
-<li class="reg em4 pulse pulse2"><a href="sceptical.html"><div class="trick left">sceptical</div></a></li>
-<li class="reg em5 pulse pulse2"><a href="angry.html"><div class="trick right">angry</div></a></li>
-<li class="reg em6 pulse pulse2"><a href="scared.html"><div class="trick left">scared</div></a></li>
+<a href="sceptical.html"><li class="reg em4 pulse pulse2"><div class="trick left">sceptical</div></li></a>
+<a href="angry.html"><li class="reg em5 pulse pulse2"><div class="trick right">angry</div></li></a>
+<a href="scared.html"><li class="reg em6 pulse pulse2"><div class="trick left">scared</div></li></a>
 </ul>
 
 
 </div> <!-- end of "wrap" -->
 
 <footer> <!-- footer -->
-<span class="copy">Design by SaFire 2018<br />
+<span class="copy">Design by SaFire<br />
 Artworks &copy; <a href="" target="_blank">address</a></span>
 </footer>
 
 <div id="mobilefooter">
-Design by SaFire 2018<br />
+Design by SaFire<br />
 Artworks &copy; <a href="" target="_blank">address</a>
 </div>
-
 
 </body>
 
 <script> /* javascript starts here */
 
-$(document).ready(function(){
-// toggle info box
-$(".reg").hoverIntent(function(){$(".words").slideToggle("1000", "linear");},{timeout: "10000"});
+$("#overlay").click(function() {
+    $("#overlay").fadeOut(800);
+});
 
-/*
-//toggle heading
-$(".cent").hoverIntent(function(){$(".cont").slideToggle("1000", "linear");},{timeout: "10000"});
-*/
+// toggle info box
+$(".reg").hoverIntent(function(){$(".words").slideToggle("1000", "linear");},{timeout: "100"});
 
 // toggle copyright
-$("footer").hoverIntent(function(){$(".copy").slideToggle("800", "linear");},{timeout: "10000"});
-}); // close document ready
-
+$("footer").hoverIntent(function(){$(".copy").fadeIn(500);},
+function(){$(".copy").fadeOut(500);},
+{timeout: "1500"});
 
 </script>
 </html>
