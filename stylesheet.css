@@ -150,37 +150,37 @@ li.reg {    /* styles for the emotion bubbles */
   color: #fff;
 }
 li.reg.em1 {  /* styles for each bubble (pics) */
-  background-image: url("curiousface.jpg");
+  background-image: url("Images/curiousface.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-right: 0.5vw;
 }
 li.reg.em2 {
-  background-image: url("excited face.jpg");
+  background-image: url("Images/excited face.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-right: 0.5vw;
 }
 li.reg.em3 {
-  background-image: url("awed cropped.jpg");
+  background-image: url("Images/awed cropped.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-right: 10vw;
 }
 li.reg.em4 {
-  background-image: url("sceptical1.jpg");
+  background-image: url("Images/sceptical1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 10vw;
 }
 li.reg.em5 {
-  background-image: url("angry1.jpg");
+  background-image: url("Images/angry1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 0.5vw;
 }
 li.reg.em6 {
-  background-image: url("scared1.jpg");
+  background-image: url("Images/scared1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 0.5vw;
