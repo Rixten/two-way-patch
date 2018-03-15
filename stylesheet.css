@@ -462,7 +462,18 @@ footer a:hover { color: #212121;
    #content {
      margin-top: 25vw;
      text-align: center;
-     font-size: 20px;
+     font-size: 18px;
+   }
+   #content h1 {
+   font-size: 60px;
+   margin-bottom: 15px;
+   text-shadow: 1px 1px 1px #000;
+   line-height: 95%;
+   font-family: 'Megrim', cursive;
+   text-transform: uppercase;
+   }
+   #content h2 {
+     font-size: 30px;
    }
    #back {
      background-color: rgba(0,0,0,0.1);
