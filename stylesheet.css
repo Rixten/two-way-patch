@@ -264,11 +264,11 @@ footer span { cursor: default;
   font-size: 11px;
 }
 .explanationtitle {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Megrim', sans-serif;
   text-align: center;
   font-size: 60px;
   margin-bottom: 20px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 .explanation {
   font-family: 'Assistant', sans-serif;
