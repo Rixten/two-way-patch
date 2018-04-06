@@ -1,7 +1,6 @@
 <!-- this is a php file -->
 
  <?php
-
  // Check if the form is submitted
  if ( isset( $_GET['submit'] ) ) {
 
@@ -19,6 +18,5 @@ fwrite($fp,$savestring);
 fclose($fp);
 
 }
-
 
   ?>
